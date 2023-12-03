@@ -1,9 +1,12 @@
+// navbar item select
 let home_button = document.getElementById("home_button");
 let about_button = document.getElementById("about_button");
 let projects_button = document.getElementById("projects_button").className;
 let contact_button = document.getElementById("contact_button").className;
 
+
 function active_item(button){
+    // Checking the availability of the class (active) and changing it to a new item
     if (home_button.className.includes("active")){
         home_button.classList.remove("active")
         button.classList.add("active")
